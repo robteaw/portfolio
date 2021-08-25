@@ -160,7 +160,6 @@ a:hover {
 }
 
 .navbar__links:hover {
-  /* color: var(--btnColor); */
   transition: all 0.3s ease;
 }
 
@@ -258,14 +257,12 @@ a:hover {
   padding: 0 20%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* place-items: center; */
 }
 
 .hero-text {
   font-weight: bold;
   text-align: center;
   text-shadow: 4px 4px 1px #073569;
-  /* line-height: 5.5rem; */
   text-align: left;
 }
 
@@ -480,8 +477,6 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
   transition: 0.5s ease-out;
 }
 
