@@ -435,7 +435,11 @@ a:hover {
 /* End of About */
 
 /* Project */
+.card-container {
+}
 
+.card-base {
+}
 /* End of Project */
 
 /* Contact */
@@ -464,12 +468,7 @@ textarea {
 }
 
 button {
-  background: linear-gradient(
-    to right,
-    var(--btnColor) 50%,
-    #87cefa 50%,
-    #00bfff
-  );
+  background: var(--btnColor);
   background-size: 200%;
   font-weight: bold;
   text-transform: uppercase;
@@ -481,7 +480,7 @@ button {
 }
 
 button:hover {
-  background-position: -100%;
+  background: #00bfff;
 }
 
 @media (max-width: 950px) {
