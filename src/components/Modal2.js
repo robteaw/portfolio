@@ -35,8 +35,20 @@ export default function Modal() {
               page and Framer Motion for the animations.
             </p>
             <div className="modal-links">
-              <button>Code</button>
-              <button>Website</button>
+              <a
+                href="https://github.com/robteaw/photography"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button>Code</button>
+              </a>
+              <a
+                href="https://renteaphotography.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button>Website</button>
+              </a>
             </div>
             <button className="close-modal" onClick={toggleModal}>
               <i class="fas fa-times"></i>

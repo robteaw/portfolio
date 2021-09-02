@@ -10,7 +10,7 @@ body.active-modal {
 }
 
 .modal {
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .modal,
