@@ -10,16 +10,17 @@ import photoshop from "../images/photoshop.png";
 
 function About() {
   return (
-    <div>
-      <section className="about" id="about">
-        <img className="person-image" src={book} />
+    <div class="head-container" id="about">
+      <h1 className="head-text">About</h1>
+      <section className="about">
+        <img className="person-image" src={book} alt={book} />
         <div className="right">
           <p>
-            Looking for a developer position to contribute my knowledge and
-            skill for the company while gaining professional experience. I was
-            introduced to programming back in college and realized the
-            importance of Python relative to my work. Prior experience was from
-            self-taught and personal clients.
+            Hello, welcome! My name is Robert Tea. I was introduced to
+            programming back in college majoring in Computer Information Systems
+            and realized I had an interest in web development. Having worked a
+            bit with Python in my current work, I develop some experiences.
+            Also, prior experiences includes self-taught and personal clients.
           </p>
           <h2>Technical Skills</h2>
           <div className="skills-images">

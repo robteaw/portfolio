@@ -1,44 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
+import { IconContext } from "react-icons";
+import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../images/logo2.png";
 
-function Navbar() {
+export default function Navbar() {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
   return (
-    <div>
-      <nav className="navbar" id="navbar">
-        <div className="navbar__container">
-          <a href="#" className="navbar__logo">
-            <img src={logo} alt={logo} />
-          </a>
-          <div className="navbar__toggle" id="mobile-menu">
-            <span className="bar"></span> <span className="bar"></span>
-            <span className="bar"></span>
+    <>
+      <IconContext.Provider value={{ color: "#fff" }}>
+        <nav className="navbar">
+          <div className="navbar-container container">
+            <a href="/" className="navbar-logo" onClick={closeMobileMenu}>
+              <img src={logo} alt="logo" />
+            </a>
+            <div className="menu-icon" onClick={handleClick}>
+              {click ? <FaTimes /> : <FaBars />}
+            </div>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
+              <li className="nav-item">
+                <a href="#" className="nav-links" onClick={closeMobileMenu}>
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="#about"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  About
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="#portfolio"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="#contact"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul className="navbar__menu">
-            <li className="navbar__item">
-              <a href="#" className="navbar__links">
-                Home
-              </a>
-            </li>
-            <li className="navbar__item">
-              <a href="#about" className="navbar__links">
-                About
-              </a>
-            </li>
-            <li className="navbar__item">
-              <a href="#portfolio" className="navbar__links">
-                Portfolio
-              </a>
-            </li>
-            <li className="navbar__item">
-              <a href="#contact" className="navbar__links">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+        </nav>
+      </IconContext.Provider>
+    </>
   );
 }
-
-export default Navbar;
