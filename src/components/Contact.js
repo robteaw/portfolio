@@ -8,41 +8,26 @@ function Contact() {
       <p>Looking for opportunities. Feel free to contact me.</p>
       <section className="contact">
         <img className="person-image" src={telephone} alt={telephone} />
-        <form
-          name="contact"
-          action="/contact"
-          method="POST"
-          onSubmit="submit"
-          className="container"
-          data-aos="fade-down"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-        >
-          <input
-            required
-            className="field"
-            name="name"
-            type="text"
-            placeholder="Full Name"
-          />
-          <input
-            required
-            className="field"
-            name="email"
-            type="email"
-            placeholder="Email"
-          />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="8"
-            placeholder="Message"
-          ></textarea>
-          <button onClick="" type="submit">
-            Send
-          </button>
-        </form>
+        <div className="contact-info">
+          <div className="row">
+            <h2>
+              <i class="far fa-envelope"></i> Email:
+            </h2>
+            <a href="mailto: robteaw@gmail.com">
+              <h2 className="subject">robteaw@gmail.com</h2>
+            </a>
+          </div>
+
+          <div className="row">
+            <h2>
+              <i class="fas fa-mobile-alt"></i> Phone:
+            </h2>
+
+            <a href="tel: 7132403527">
+              <h2 className="subject">713-240-3527</h2>
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   );

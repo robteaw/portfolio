@@ -2,15 +2,8 @@ body.active-modal {
   overflow-y: hidden;
 }
 
-.btn-modal {
-  /* padding: 10px 20px;
-  display: block;
-  margin: 100px auto 0;
-  font-size: 18px; */
-}
-
 .modal {
-  /* z-index: 2; */
+  z-index: 2;
 }
 
 .modal,

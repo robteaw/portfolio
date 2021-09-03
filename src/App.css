@@ -62,7 +62,8 @@ p {
 }
 
 .navbar a,
-footer a {
+footer a,
+.contact-info .row a h2 {
   background: linear-gradient(to right, #fff 50%, #87cefa 50%, #00bfff);
   background-size: 200%;
   -webkit-background-clip: text;
@@ -599,57 +600,38 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+.contact-info .row {
+  border-radius: 10px;
+  margin: 2rem 0;
+  text-align: left;
 }
 
-input {
-  color: var(--textColor);
-  background: transparent;
-  margin: 0.5rem 0;
-  padding: 0.75rem;
-  border: 1px solid var(--textColor);
-  border-radius: 5px;
+.contact-info .row i {
+  padding: 0 0.25rem;
 }
 
-textarea {
-  color: var(--textColor);
-  background: transparent;
-  margin: 0.5rem 0 1rem 0;
-  padding: 0.75rem;
-  border: 1px solid var(--textColor);
-  border-radius: 5px;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: var(--textColor);
-}
-
-input:focus,
-textarea:focus {
-  outline: none !important;
-  border: 1px solid var(--cardTitle);
-  box-shadow: 0 0 10px #719ece;
-}
-
-.contact button {
-  background: var(--btnColor);
-  background-size: 200%;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 0.75rem;
+.contact-info .row .subject {
+  margin-left: 1.5rem;
+  padding: 0.5rem;
+  text-align: left;
   cursor: pointer;
-  border: none;
-  border-radius: 50px;
-  outline: none;
+}
+
+.contact-info .row h2 {
   transition: 0.5s ease-out;
 }
 
-.contact button:hover {
-  background: #00bfff;
+.contact-info .row h2:hover {
+  background-position: -100%;
+}
+
+.contact-info img {
+  height: 1.5rem;
+}
+
+.contact-info a {
+  color: var(--btnText);
+  text-decoration: none;
 }
 
 @media (max-width: 950px) {
