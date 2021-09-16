@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from "./Modal";
 import Modal2 from "./Modal2";
+import Modal3 from "./Modal3";
 
 function Portfolio() {
   return (
@@ -12,6 +13,7 @@ function Portfolio() {
         <div className="card-container">
           <Modal />
           <Modal2 />
+          <Modal3 />
         </div>
       </section>
     </div>
