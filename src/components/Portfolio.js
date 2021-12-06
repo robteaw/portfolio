@@ -2,6 +2,7 @@ import React from "react";
 import Modal from "./Modal";
 import Modal2 from "./Modal2";
 import Modal3 from "./Modal3";
+import Modal4 from "./Modal4";
 
 function Portfolio() {
   return (
@@ -14,6 +15,7 @@ function Portfolio() {
           <Modal />
           <Modal2 />
           <Modal3 />
+          <Modal4 />
         </div>
       </section>
     </div>
