@@ -6,7 +6,9 @@ function Hero() {
     <div>
       <section className="hero" id="hero">
         <div className="hero-text">
-          <p>Hi 👋, my name is</p>
+          <p>
+            Hi <span className="emoji">👋</span> my name is
+          </p>
           <h1 className="first-text">Robert Tea</h1>
           <h2 className="second-text">Web Developer</h2>
           <a href="#contact">
