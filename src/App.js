@@ -5,17 +5,19 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+// Animation
+import { motion } from "framer-motion";
 
 function App() {
   return (
-    <div className="App">
+    <motion.div initial="hidden" animate="show" className="App">
       <Navbar />
       <Hero />
       <About />
       <Portfolio />
       <Contact />
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 

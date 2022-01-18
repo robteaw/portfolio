@@ -7,14 +7,41 @@ import react from "../images/react.png";
 import python from "../images/python.png";
 import sql from "../images/sql.png";
 import photoshop from "../images/photoshop.png";
+// Animation
+import { motion } from "framer-motion";
+import { textAnim, bookAnim, skillAnim } from "../animations";
+import { useScroll } from "../components/useScroll";
 
 function About() {
+  const [element, controls] = useScroll();
+
   return (
-    <div class="head-container" id="about">
-      <h1 className="head-text">About</h1>
+    <div class="head-container" id="about" ref={element}>
+      <motion.h1
+        variants={textAnim}
+        animate={controls}
+        transition={{
+          duration: 1,
+        }}
+        className="head-text"
+      >
+        About
+      </motion.h1>
       <section className="about">
-        <img className="person-image" src={book} alt={book} />
-        <div className="right">
+        <motion.img
+          variants={bookAnim}
+          animate={controls}
+          transition={{ type: "tween", duration: 0.5 }}
+          className="person-image"
+          src={book}
+          alt={book}
+        ></motion.img>
+        <motion.div
+          variants={skillAnim}
+          animate={controls}
+          transition={{ type: "tween", duration: 0.5 }}
+          className="right"
+        >
           <p>
             Hello, welcome! My name is Robert Tea. I was introduced to
             programming back in college majoring in Computer Information Systems
@@ -73,7 +100,7 @@ function About() {
               </span>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );
