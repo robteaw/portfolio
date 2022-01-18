@@ -23,24 +23,18 @@ export const container = {
 
 // About
 export const bookAnim = {
-  hidden: { x: -800, opacity: 0 },
+  hidden: { x: -400, opacity: 0 },
   show: { x: 0, opacity: 1, transition: { duration: 1 } },
 };
 export const skillAnim = {
-  hidden: { x: 800, opacity: 0 },
+  hidden: { x: 400, opacity: 0 },
   show: { x: 0, opacity: 1, transition: { duration: 1 } },
 };
 
 // Portfolio
 export const cardAnim = {
-  hidden: {
-    scale: 0,
-    opacity: 0,
-  },
-  show: {
-    scale: 1,
-    opacity: 1,
-  },
+  hidden: { y: -200, opacity: 0 },
+  show: { y: 0, opacity: 1, transition: { duration: 1 } },
 };
 
 // Contact
