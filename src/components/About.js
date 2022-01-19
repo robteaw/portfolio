@@ -18,6 +18,7 @@ function About() {
   return (
     <div class="head-container" id="about" ref={element}>
       <motion.h1
+        initial="hidden"
         variants={textAnim}
         animate={controls}
         transition={{
@@ -29,6 +30,7 @@ function About() {
       </motion.h1>
       <section className="about">
         <motion.img
+          initial="hidden"
           variants={bookAnim}
           animate={controls}
           transition={{ type: "tween", duration: 0.5 }}
@@ -37,6 +39,7 @@ function About() {
           alt={book}
         ></motion.img>
         <motion.div
+          initial="hidden"
           variants={skillAnim}
           animate={controls}
           transition={{ type: "tween", duration: 0.5 }}

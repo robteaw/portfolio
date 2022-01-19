@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import { IconContext } from "react-icons";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../images/logo2.png";
+// Animation
+import { motion } from "framer-motion";
+import { logoAnim, linkAnim } from "../animations";
+import { useScroll } from "../components/useScroll";
 
 export default function Navbar() {
+  const [element, controls] = useScroll();
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -12,21 +17,30 @@ export default function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <nav className="navbar">
+        <motion.nav
+          initial="hidden"
+          animate={controls}
+          className="navbar"
+          ref={element}
+        >
           <div className="navbar-container container">
             <a href="/" className="navbar-logo" onClick={closeMobileMenu}>
-              <img src={logo} alt="logo" />
+              <motion.img
+                variants={logoAnim}
+                src={logo}
+                alt="logo"
+              ></motion.img>
             </a>
             <div className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </div>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-              <li className="nav-item">
+              <motion.li variants={linkAnim} className="nav-item">
                 <a href="#" className="nav-links" onClick={closeMobileMenu}>
                   Home
                 </a>
-              </li>
-              <li className="nav-item">
+              </motion.li>
+              <motion.li variants={linkAnim} className="nav-item">
                 <a
                   href="#about"
                   className="nav-links"
@@ -34,8 +48,8 @@ export default function Navbar() {
                 >
                   About
                 </a>
-              </li>
-              <li className="nav-item">
+              </motion.li>
+              <motion.li variants={linkAnim} className="nav-item">
                 <a
                   href="#portfolio"
                   className="nav-links"
@@ -43,8 +57,8 @@ export default function Navbar() {
                 >
                   Portfolio
                 </a>
-              </li>
-              <li className="nav-item">
+              </motion.li>
+              <motion.li variants={linkAnim} className="nav-item">
                 <a
                   href="#contact"
                   className="nav-links"
@@ -52,10 +66,10 @@ export default function Navbar() {
                 >
                   Contact
                 </a>
-              </li>
+              </motion.li>
             </ul>
           </div>
-        </nav>
+        </motion.nav>
       </IconContext.Provider>
     </>
   );

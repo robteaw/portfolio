@@ -11,6 +11,7 @@ function Contact() {
   return (
     <div class="head-container" id="contact" ref={element}>
       <motion.div
+        initial="hidden"
         variants={textAnim}
         animate={controls}
         transition={{
@@ -22,6 +23,7 @@ function Contact() {
       </motion.div>
       <section className="contact">
         <motion.img
+          initial="hidden"
           variants={phoneAnim}
           animate={controls}
           transition={{ type: "tween", duration: 0.5 }}
@@ -30,6 +32,7 @@ function Contact() {
           alt={telephone}
         ></motion.img>
         <motion.div
+          initial="hidden"
           variants={contactAnim}
           animate={controls}
           transition={{ type: "tween", duration: 0.5 }}

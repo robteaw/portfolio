@@ -15,6 +15,7 @@ function Portfolio() {
     <div>
       <div className="head-container" id="portfolio" ref={element}>
         <motion.h1
+          initial="hidden"
           variants={textAnim}
           animate={controls}
           transition={{
@@ -27,16 +28,16 @@ function Portfolio() {
       </div>
       <section className="portfolio">
         <div className="card-container">
-          <motion.div variants={cardAnim} animate={controls}>
+          <motion.div initial="hidden" variants={cardAnim} animate={controls}>
             <Modal />
           </motion.div>
-          <motion.div variants={cardAnim} animate={controls}>
+          <motion.div initial="hidden" variants={cardAnim} animate={controls}>
             <Modal2 />
           </motion.div>
-          <motion.div variants={cardAnim} animate={controls}>
+          <motion.div initial="hidden" variants={cardAnim} animate={controls}>
             <Modal3 />
           </motion.div>
-          <motion.div variants={cardAnim} animate={controls}>
+          <motion.div initial="hidden" variants={cardAnim} animate={controls}>
             <Modal4 />
           </motion.div>
         </div>
