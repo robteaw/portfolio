@@ -619,6 +619,14 @@ a:hover {
   background-size: 150%;
 }
 
+.img-five {
+  background: url("./images/boba.png") no-repeat;
+  height: 300px;
+  width: 100%;
+  border-radius: 5% 0;
+  background-size: 150%;
+}
+
 .card .title {
   font-size: 1.5rem;
   font-weight: bold;

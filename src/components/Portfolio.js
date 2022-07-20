@@ -3,6 +3,7 @@ import Modal from "./Modal";
 import Modal2 from "./Modal2";
 import Modal3 from "./Modal3";
 import Modal4 from "./Modal4";
+import Modal5 from "./Modal5";
 // Animation
 import { motion } from "framer-motion";
 import { textAnim, cardAnim } from "../animations";
@@ -30,6 +31,9 @@ function Portfolio() {
         <div className="card-container">
           <motion.div initial="hidden" variants={cardAnim} animate={controls}>
             <Modal />
+          </motion.div>
+          <motion.div initial="hidden" variants={cardAnim} animate={controls}>
+            <Modal5 />
           </motion.div>
           <motion.div initial="hidden" variants={cardAnim} animate={controls}>
             <Modal2 />
