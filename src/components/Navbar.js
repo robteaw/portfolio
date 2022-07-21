@@ -11,8 +11,20 @@ export default function Navbar() {
   const [element, controls] = useScroll();
   const [click, setClick] = useState(false);
 
+  // Close nav menu
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  // Change nav color on scroll
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 70) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeColor);
 
   return (
     <>
@@ -20,7 +32,7 @@ export default function Navbar() {
         <motion.nav
           initial="hidden"
           animate={controls}
-          className="navbar"
+          className={color ? "navbar nav-scroll" : "navbar"}
           ref={element}
         >
           <div className="navbar-container container">

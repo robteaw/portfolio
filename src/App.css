@@ -9,13 +9,13 @@
 }
 
 :root {
+  --navScroll: #131313;
   --heroColor: #fff;
   --heroColor2: #87cefa;
   --headColor: #ffd700;
   --textColor: #dcdcdc;
   --btnText: #fff;
   --btnColor: #ffd700;
-  /* --formColor: #0b2957; */
   --toolColor: #fff;
   --toolText: ##0b2957;
   --cardColor: #fff;
@@ -123,6 +123,10 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 999;
+}
+
+.nav-scroll {
+  background-color: var(--navScroll);
 }
 
 .navbar-container {
