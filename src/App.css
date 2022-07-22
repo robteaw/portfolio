@@ -116,6 +116,7 @@ a:hover {
   background: var(--bgColor);
   text-transform: uppercase;
   height: 4.375rem;
+  padding: 0.3rem 4vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,6 +128,7 @@ a:hover {
 
 .nav-scroll {
   background-color: var(--navScroll);
+  opacity: .9;
 }
 
 .navbar-container {

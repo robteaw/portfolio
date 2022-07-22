@@ -1,5 +1,4 @@
-const data = {
-  cardData: [
+const data = [
     {
       id: 1,
       title: "SEO",
@@ -45,5 +44,4 @@ const data = {
       code: "https://github.com/robteaw/teavies",
       website: "https://thirsty-haibt-b9c2ab.netlify.app/",
     },
-  ],
-};
+  ]
