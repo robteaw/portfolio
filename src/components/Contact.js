@@ -1,5 +1,6 @@
 import React from "react";
 import telephone from "../images/telephone.png";
+import styled from "styled-components";
 // Animation
 import { motion } from "framer-motion";
 import { textAnim, phoneAnim, contactAnim } from "../animations";
@@ -9,7 +10,7 @@ function Contact() {
   const [element, controls] = useScroll();
 
   return (
-    <div class="head-container" id="contact" ref={element}>
+    <Container className="head-container" id="contact" ref={element}>
       <motion.div
         initial="hidden"
         variants={textAnim}
@@ -58,8 +59,69 @@ function Contact() {
           </div>
         </motion.div>
       </section>
-    </div>
+    </Container>
   );
 }
 
 export default Contact;
+
+// Styling
+const Container = styled.div`
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .contact-info .row {
+    border-radius: 10px;
+    margin: 2rem 0;
+    text-align: left;
+  }
+
+  .contact-info .row i {
+    padding: 0 0.25rem;
+  }
+
+  .contact-info .row .subject {
+    margin-left: 1.5rem;
+    padding: 0.5rem;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .contact-info .row h2 {
+    transition: 0.5s ease-out;
+  }
+
+  .contact-info .row h2:hover {
+    background-position: -100%;
+  }
+
+  .contact-info img {
+    height: 1.5rem;
+  }
+
+  .contact-info a {
+    color: var(--btnText);
+    text-decoration: none;
+  }
+
+  @media (max-width: 950px) {
+    .contact {
+      display: flex;
+      flex-direction: column;
+      padding: 0 10%;
+    }
+    form {
+      margin-top: 1.5rem;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .contact {
+      display: flex;
+      flex-direction: column;
+      padding: 0 8%;
+    }
+  }
+`;

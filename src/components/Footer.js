@@ -1,8 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 
 export default function Footer() {
   return (
-    <div>
+    <Container>
       <footer>
         <p>© 2021 Robert Tea</p>
         <div class="icon">
@@ -18,6 +19,36 @@ export default function Footer() {
           </a>
         </div>
       </footer>
-    </div>
+    </Container>
   );
 }
+
+// Styling
+const Container = styled.div`
+  footer {
+    max-width: 81.25rem;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 3.125rem;
+    padding-left: 3.125rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .icon i {
+    color: var(--btnText);
+    margin-left: 1.5rem;
+    cursor: pointer;
+  }
+
+  .icon i:hover {
+    color: var(--btnColor);
+  }
+
+  @media (max-width: 950px) {
+    footer p {
+      font-size: 0.9rem;
+    }
+  }
+`;

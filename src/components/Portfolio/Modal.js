@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Modal.css";
+import Data from "./Data";
 
 export default function Modal() {
   // it's on false because when you start you don't want to see the button but only when you click the button

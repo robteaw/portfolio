@@ -7,13 +7,13 @@ import Modal5 from "./Portfolio/Modal5";
 // Animation
 import { motion } from "framer-motion";
 import { textAnim, cardAnim } from "../animations";
-import { useScroll } from "../components/useScroll";
+import { useScroll } from "./useScroll";
 
-function Portfolio() {
+export default function Portfolio() {
   const [element, controls] = useScroll();
 
   return (
-    <div>
+    <>
       <div className="head-container" id="portfolio" ref={element}>
         <motion.h1
           initial="hidden"
@@ -46,8 +46,6 @@ function Portfolio() {
           </motion.div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
-
-export default Portfolio;
