@@ -29,7 +29,7 @@ export default function Hero() {
               Web Developer
             </motion.h2>
             <a href="#about">
-              <motion.button variants={titleAnim}>About Me</motion.button>
+              <motion.button variants={titleAnim}>See More</motion.button>
             </a>
           </div>
         </motion.div>
@@ -52,7 +52,6 @@ export default function Hero() {
 
 // Styling
 const Container = styled.div`
-  /* Hero */
   .hero {
     height: 60vh;
     width: 100%;
@@ -170,5 +169,4 @@ const Container = styled.div`
       flex-direction: column-reverse;
     }
   }
-  /* End of Hero */
 `;
