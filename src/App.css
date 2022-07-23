@@ -17,28 +17,48 @@
   --btnText: #fff;
   --btnColor: #ffd700;
   --toolColor: #fff;
-  --toolText: ##0b2957;
+  --toolText: #0b2957;
   --cardColor: #fff;
   --cardTitle: #87cefa;
   --bgColor: #0b2957;
   --bgColor2: #131313;
+  --mouseHover: rgb(80, 137, 180);
 }
 
 body {
   font-family: "Roboto";
-  background: var(--bgColor);
+  background:  linear-gradient(150deg,#0b2957 15%,rgb(12, 12, 53) 70%,#174a69 94%);;
   overflow-x: hidden;
 }
 
-section {
+.hero {
   height: auto;
   width: 100%;
-  margin: 6rem 0 15rem 0;
-  padding: 0 10%;
+  margin: 6rem 0 5rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   place-items: center;
+}
+.about, .portfolio, .contact {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+}
+.hero, .about, .contact {
+  padding: 0 20%;
+}
+.about, .portfolio {
+  margin: 6rem 0 25rem 0;
+}
+.portfolio {
+  padding: 0 10%;
+}
+.contact {
+  margin: 6rem 0 14rem 0;
 }
 
 section img {

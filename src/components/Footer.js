@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <Container>
       <footer>
-        <p>© 2021 Robert Tea</p>
+        <p>© 2022 Robert Tea</p>
       </footer>
     </Container>
   );
@@ -14,7 +14,7 @@ export default function Footer() {
 // Styling
 const Container = styled.div`
   footer {
-    background-color: var(--bgColor2);
+    /* background-color: var(--bgColor2); */
     display: flex;
     width: 100%;
     justify-content: center;

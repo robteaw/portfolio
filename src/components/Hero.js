@@ -3,8 +3,9 @@ import laptop from "../images/laptop.png";
 import styled from "styled-components";
 // Animation
 import { motion } from "framer-motion";
-import { container, titleAnim, imgAnim } from "../animations";
+import { container, titleAnim, imgAnim, scrollAnim } from "../animations";
 import { useScroll } from "../components/useScroll";
+import ScrollDown from "./ScrollDown";
 
 export default function Hero() {
   const [element, controls] = useScroll();
@@ -28,9 +29,6 @@ export default function Hero() {
             <motion.h2 variants={titleAnim} className="second-text">
               Web Developer
             </motion.h2>
-            <a href="#about">
-              <motion.button variants={titleAnim}>See More</motion.button>
-            </a>
           </div>
         </motion.div>
         <motion.div
@@ -46,6 +44,9 @@ export default function Hero() {
           />
         </motion.div>
       </section>
+      <motion.div variants={scrollAnim}>
+        <ScrollDown />
+      </motion.div>
     </Container>
   );
 }
@@ -103,6 +104,7 @@ const Container = styled.div`
   .hero p {
     color: var(--heroColor2);
     font-size: 1.1rem;
+    padding: 1rem 0;
   }
 
   .hero button {

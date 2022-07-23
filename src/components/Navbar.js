@@ -75,7 +75,7 @@ export default function Navbar() {
               </a>
             </motion.li>
             {/* Icon */}
-            <div class="icon">
+            {/* <div class="icon">
               <a
                 href="https://www.linkedin.com/in/robert-tea-4866a2146/"
                 target="_blank"
@@ -90,7 +90,7 @@ export default function Navbar() {
               >
                 <i class="fab fa-github"></i>
               </a>
-            </div>
+            </div> */}
           </ul>
         </div>
       </Nav>
@@ -100,7 +100,7 @@ export default function Navbar() {
 
 // Styling
 const Nav = styled.nav`
-  background: var(--bgColor);
+  background: transparent;
   text-transform: uppercase;
   height: 4.375rem;
   width: 100%;

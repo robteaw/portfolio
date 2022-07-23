@@ -20,6 +20,11 @@ export const imgAnim = {
   show: { opacity: 1, transition: { duration: 1 } },
 };
 
+export const scrollAnim = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { duration: 10 } },
+};
+
 export const container = {
   show: {
     x: 0,
