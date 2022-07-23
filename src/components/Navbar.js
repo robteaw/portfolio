@@ -153,18 +153,11 @@ const Nav = styled.nav`
     padding: 0 0.25rem;
   }
   .nav-links {
-    color: var(--mainColor);
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 1rem 2rem;
     height: 100%;
-  }
-  .nav-links:hover {
-    color: var(--hoverColor);
-  }
-  .fa-bars {
-    color: var(--mainColor);
   }
   .menu-icon {
     display: none;
@@ -238,7 +231,6 @@ const Nav = styled.nav`
       cursor: pointer;
     }
     .fa-times {
-      color: var(--mainColor);
       font-size: 2rem;
     }
     .nav-btn {
