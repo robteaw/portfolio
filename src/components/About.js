@@ -88,6 +88,7 @@ const Container = styled.div`
   .about p {
     width: 100%;
     max-width: 30rem;
+    margin-bottom: 1.5rem;
     text-align: left;
   }
 

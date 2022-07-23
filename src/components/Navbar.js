@@ -37,12 +37,14 @@ export default function Navbar() {
         ref={element}
       >
         <div className="navbar-container container">
+          {/* Logo */}
           <a href="/" className="navbar-logo" onClick={closeMobileMenu}>
             <motion.img variants={logoAnim} src={logo} alt="logo"></motion.img>
           </a>
           <div className="menu-icon" onClick={handleClick}>
             {click ? <FaTimes /> : <FaBars />}
           </div>
+          {/* Links */}
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <motion.li variants={linkAnim} className="nav-item">
               <a href="#" className="nav-links" onClick={closeMobileMenu}>
@@ -72,6 +74,23 @@ export default function Navbar() {
                 Contact
               </a>
             </motion.li>
+            {/* Icon */}
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/robert-tea-4866a2146/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/robteaw"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
           </ul>
         </div>
       </Nav>
@@ -85,7 +104,7 @@ const Nav = styled.nav`
   text-transform: uppercase;
   height: 4.375rem;
   width: 100%;
-  padding: 0.3rem 4vw;
+  padding: 0.3rem 3vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,6 +168,17 @@ const Nav = styled.nav`
   }
   .menu-icon {
     display: none;
+  }
+  .icon i {
+    color: var(--btnText);
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      color: var(--btnColor);
+    }
   }
 
   @media (max-width: 960px) {

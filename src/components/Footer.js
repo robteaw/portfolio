@@ -6,18 +6,6 @@ export default function Footer() {
     <Container>
       <footer>
         <p>© 2021 Robert Tea</p>
-        <div class="icon">
-          <a
-            href="https://www.linkedin.com/in/robert-tea-4866a2146/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/robteaw" target="_blank" rel="noreferrer">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
       </footer>
     </Container>
   );
@@ -26,24 +14,15 @@ export default function Footer() {
 // Styling
 const Container = styled.div`
   footer {
-    max-width: 81.25rem;
+    background-color: var(--bgColor2);
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 3.125rem;
-    padding-left: 3.125rem;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .icon i {
-    color: var(--btnText);
-    margin-left: 1.5rem;
-    cursor: pointer;
-  }
-
-  .icon i:hover {
-    color: var(--btnColor);
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+    top: 100%;
+    bottom: 0;
+    position: relative;
+    clear: both;
   }
 
   @media (max-width: 950px) {

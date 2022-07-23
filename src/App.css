@@ -58,7 +58,6 @@ p {
   color: var(--textColor);
   text-align: left;
   line-height: 2rem;
-  margin-bottom: 1.5rem;
 }
 
 .navbar a,
