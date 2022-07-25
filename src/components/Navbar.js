@@ -29,7 +29,7 @@ export default function Navbar() {
   };
   window.addEventListener("scroll", changeColor);
 
-  // Dark to light background
+  // Change icon on click
   const [themeIcon, setThemeIcon] = useState(false);
   const changeIcon = () => setThemeIcon(!themeIcon);
 
@@ -80,11 +80,12 @@ export default function Navbar() {
                 Contact
               </a>
             </motion.li>
-              <motion.img src={themeIcon ? sun : moon} 
-              // className={theme ? 'body' : 'body light'}
+            <motion.img
               id="colorBg"
+              src={themeIcon ? sun : moon}
               onClick={() => changeIcon()}
-                />   
+              // onChange={toggleTheme}
+            />
             {/* Icon */}
             {/* <div class="icon">
               <a

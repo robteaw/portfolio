@@ -28,9 +28,29 @@
 }
 
 body {
-  background: linear-gradient(150deg,#0b2957 15%,rgb(12, 12, 53) 70%,#174a69 94%);
   font-family: "Roboto";
   overflow-x: hidden;
+}
+
+/* Dark mode */
+#dark {
+  background: linear-gradient(150deg,#0b2957 15%,rgb(12, 12, 53) 70%,#174a69 94%);
+}
+#dark h1 {
+  color: var(--heroColor);
+}
+#dark p {
+  color: var(--textColor);
+}
+/* Light mode */
+#light {
+  background-color: var(--lightBg);
+}
+#light h1 {
+  color: black;
+}
+#light p {
+  color: black;
 }
 
 .hero {
@@ -60,7 +80,7 @@ body {
   padding: 0 10%;
 }
 .contact {
-  margin: 6rem 0 14rem 0;
+  margin: 6rem 0 12rem 0;
 }
 
 section img {
@@ -68,7 +88,6 @@ section img {
 }
 
 h1 {
-  color: var(--heroColor);
   font-size: 3rem;
 }
 
@@ -77,7 +96,6 @@ h2 {
 }
 
 p {
-  color: var(--textColor);
   text-align: left;
   line-height: 2rem;
 }

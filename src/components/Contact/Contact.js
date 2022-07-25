@@ -1,5 +1,5 @@
 import React from "react";
-import email from '../../images/email.png';
+import email from "../../images/email.png";
 import mobile from "../../images/mobile.png";
 import telephone from "../../images/telephone.png";
 import styled from "styled-components";
@@ -75,35 +75,29 @@ const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-
   .contact-info .row {
     border-radius: 10px;
     margin: 2rem 0;
     text-align: left;
   }
-
   .contact-info .row img {
     padding: 0 0.25rem;
   }
-
   .contact-info .row .subject {
     margin-left: 2.2rem;
     padding: 0.5rem;
     text-align: left;
     cursor: pointer;
   }
-
   .contact-info .row h2 {
     transition: 0.5s ease-out;
   }
-
   .contact-info .row h2:hover {
     background-position: -100%;
   }
-
   .contact-info img {
     height: 1.5rem;
-    margin-right: .7rem;
+    margin-right: 0.7rem;
   }
   .contact-info a {
     color: var(--btnText);
@@ -120,7 +114,6 @@ const Container = styled.div`
       margin-top: 1.5rem;
     }
   }
-
   @media (max-width: 650px) {
     .contact {
       display: flex;
