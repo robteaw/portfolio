@@ -33,23 +33,25 @@ body {
 }
 
 /* Dark mode */
-#dark {
+body.dark {
   background: linear-gradient(150deg,#0b2957 15%,rgb(12, 12, 53) 70%,#174a69 94%);
+  --image: url("./images/moon.png");
 }
-#dark h1 {
+body.dark h1 {
   color: var(--heroColor);
 }
-#dark p {
+body.dark p {
   color: var(--textColor);
 }
 /* Light mode */
-#light {
+body.light {
   background-color: var(--lightBg);
+  --image: url("./images/sun.png");
 }
-#light h1 {
+body.light h1 {
   color: black;
 }
-#light p {
+body.light p {
   color: black;
 }
 
@@ -118,6 +120,12 @@ footer a,
 a:hover {
   background-position: -100%;
   outline: none;
+}
+
+#colorBg {
+  height: 2rem;
+  margin: 0 2rem;
+  cursor: pointer;
 }
 
 .head-container {

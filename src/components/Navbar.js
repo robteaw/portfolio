@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { IconContext } from "react-icons";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../images/logo2.png";
-import sun from "../images/sun.png";
-import moon from "../images/moon.png";
 import styled from "styled-components";
 // Animation
 import { motion } from "framer-motion";
@@ -28,10 +26,6 @@ export default function Navbar() {
     }
   };
   window.addEventListener("scroll", changeColor);
-
-  // Change icon on click
-  const [themeIcon, setThemeIcon] = useState(false);
-  const changeIcon = () => setThemeIcon(!themeIcon);
 
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
@@ -80,12 +74,7 @@ export default function Navbar() {
                 Contact
               </a>
             </motion.li>
-            <motion.img
-              id="colorBg"
-              src={themeIcon ? sun : moon}
-              onClick={() => changeIcon()}
-              // onChange={toggleTheme}
-            />
+  
             {/* Icon */}
             {/* <div class="icon">
               <a
@@ -191,11 +180,6 @@ const Nav = styled.nav`
     &:hover {
       color: var(--btnColor);
     }
-  }
-  #colorBg {
-    height: 2rem;
-    margin: 0 2rem;
-    cursor: pointer;
   }
 
   @media (max-width: 960px) {
