@@ -1,10 +1,12 @@
 import React from "react";
-import telephone from "../images/telephone.png";
+import email from '../../images/email.png';
+import mobile from "../../images/mobile.png";
+import telephone from "../../images/telephone.png";
 import styled from "styled-components";
 // Animation
 import { motion } from "framer-motion";
-import { textAnim, phoneAnim, contactAnim } from "../animations";
-import { useScroll } from "../components/useScroll";
+import { textAnim, phoneAnim, contactAnim } from "../../animations";
+import { useScroll } from "../useScroll";
 
 function Contact() {
   const [element, controls] = useScroll();
@@ -41,7 +43,8 @@ function Contact() {
         >
           <div className="row">
             <h2>
-              <i class="far fa-envelope"></i> Email:
+              <img src={email} alt={email} />
+              Email:
             </h2>
             <a href="mailto: robteaw@gmail.com">
               <h2 className="subject">robteaw@gmail.com</h2>
@@ -50,7 +53,8 @@ function Contact() {
 
           <div className="row">
             <h2>
-              <i class="fas fa-mobile-alt"></i> Phone:
+              <img src={mobile} alt={mobile} />
+              Phone:
             </h2>
 
             <a href="tel: 7132403527">
@@ -78,12 +82,12 @@ const Container = styled.div`
     text-align: left;
   }
 
-  .contact-info .row i {
+  .contact-info .row img {
     padding: 0 0.25rem;
   }
 
   .contact-info .row .subject {
-    margin-left: 1.5rem;
+    margin-left: 2.2rem;
     padding: 0.5rem;
     text-align: left;
     cursor: pointer;
@@ -99,8 +103,8 @@ const Container = styled.div`
 
   .contact-info img {
     height: 1.5rem;
+    margin-right: .7rem;
   }
-
   .contact-info a {
     color: var(--btnText);
     text-decoration: none;

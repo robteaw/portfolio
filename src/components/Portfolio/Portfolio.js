@@ -1,13 +1,13 @@
 import React from "react";
-import Modal from "./Portfolio/Modal";
-import Modal2 from "./Portfolio/Modal2";
-import Modal3 from "./Portfolio/Modal3";
-import Modal4 from "./Portfolio/Modal4";
-import Modal5 from "./Portfolio/Modal5";
+import Modal from "./Modal";
+import Modal2 from "./Modal2";
+import Modal3 from "./Modal3";
+import Modal4 from "./Modal4";
+import Modal5 from "./Modal5";
 // Animation
 import { motion } from "framer-motion";
-import { textAnim, cardAnim } from "../animations";
-import { useScroll } from "./useScroll";
+import { textAnim, cardAnim } from "../../animations";
+import { useScroll } from "../useScroll";
 
 export default function Portfolio() {
   const [element, controls] = useScroll();

@@ -1,15 +1,15 @@
 import React from "react";
-import book from "../images/book.png";
-import javascript from "../images/javascript.png";
-import react from "../images/react.png";
-import python from "../images/python.png";
-import sql from "../images/sql.png";
-import photoshop from "../images/photoshop.png";
+import book from "../../images/book.png";
+import javascript from "../../images/javascript.png";
+import react from "../../images/react.png";
+import python from "../../images/python.png";
+import sql from "../../images/sql.png";
+import photoshop from "../../images/photoshop.png";
 import styled from "styled-components";
 // Animation
 import { motion } from "framer-motion";
-import { textAnim, bookAnim, skillAnim } from "../animations";
-import { useScroll } from "../components/useScroll";
+import { textAnim, bookAnim, skillAnim } from "../../animations";
+import { useScroll } from "../useScroll";
 
 export default function About() {
   const [element, controls] = useScroll();
@@ -84,29 +84,24 @@ const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-
   .about p {
     width: 100%;
     max-width: 30rem;
     margin-bottom: 1.5rem;
     text-align: left;
   }
-
   .about h2 {
     text-align: left;
   }
-
   .skills-images {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   .skills-images img {
     height: 3rem;
     margin: 1.5rem 0.2rem;
   }
-
   .skills-images .icon {
     margin: 0 0.75rem;
     text-align: center;
@@ -118,7 +113,6 @@ const Container = styled.div`
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     z-index: 2;
   }
-
   .skills-images .icon span {
     color: var(--textColor);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
@@ -130,12 +124,10 @@ const Container = styled.div`
     z-index: 2;
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-
   .skills-images .icon span i {
     line-height: 60px;
     font-size: 2rem;
   }
-
   .skills-images .icon .tooltip {
     color: var(--textColor);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
@@ -168,59 +160,50 @@ const Container = styled.div`
   .skills-images .icon:hover span {
     color: #fff;
   }
-
   .skills-images .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
   }
-
   .skills-images .html:hover .tooltip,
   .skills-images .html:hover .tooltip:before {
     color: var(--toolText);
     background: var(--toolColor);
   }
-
   .skills-images .css:hover .tooltip,
   .skills-images .css:hover .tooltip:before {
     color: var(--toolText);
     background: var(--toolColor);
   }
-
   .skills-images .javascript:hover .tooltip,
   .skills-images .javascript:hover .tooltip:before {
     color: var(--toolText);
     background: var(--toolColor);
   }
-
   .skills-images .react:hover .tooltip,
   .skills-images .react:hover .tooltip:before {
     color: var(--toolText);
     background: var(--toolColor);
   }
-
   .skills-images .python:hover .tooltip,
   .skills-images .python:hover .tooltip:before {
     color: var(--toolText);
     background: var(--toolColor);
   }
-
   .skills-images .sql:hover .tooltip,
   .skills-images .sql:hover .tooltip:before {
     color: var(--toolText);
     background: var(--toolColor);
   }
-
   .skills-images .photoshop:hover .tooltip,
   .skills-images .photoshop:hover .tooltip:before {
     color: var(--toolText);
     background: var(--toolColor);
   }
-
+  /* Mobile */
   @media (max-width: 1680px) {
     .icon span img {
       padding: 0.3rem;
     }
   }
-
   @media (max-width: 950px) {
     .about {
       display: flex;

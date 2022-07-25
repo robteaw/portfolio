@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { IconContext } from "react-icons";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../images/logo2.png";
+import sun from "../images/sun.png";
+import moon from "../images/moon.png";
 import styled from "styled-components";
 // Animation
 import { motion } from "framer-motion";
@@ -26,6 +28,10 @@ export default function Navbar() {
     }
   };
   window.addEventListener("scroll", changeColor);
+
+  // Dark to light background
+  const [themeIcon, setThemeIcon] = useState(false);
+  const changeIcon = () => setThemeIcon(!themeIcon);
 
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
@@ -74,6 +80,11 @@ export default function Navbar() {
                 Contact
               </a>
             </motion.li>
+              <motion.img src={themeIcon ? sun : moon} 
+              // className={theme ? 'body' : 'body light'}
+              id="colorBg"
+              onClick={() => changeIcon()}
+                />   
             {/* Icon */}
             {/* <div class="icon">
               <a
@@ -153,11 +164,18 @@ const Nav = styled.nav`
     padding: 0 0.25rem;
   }
   .nav-links {
+    color: var(--mainColor);
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 1rem 2rem;
     height: 100%;
+  }
+  .nav-links:hover {
+    color: var(--hoverColor);
+  }
+  .fa-bars {
+    color: var(--mainColor);
   }
   .menu-icon {
     display: none;
@@ -172,6 +190,11 @@ const Nav = styled.nav`
     &:hover {
       color: var(--btnColor);
     }
+  }
+  #colorBg {
+    height: 2rem;
+    margin: 0 2rem;
+    cursor: pointer;
   }
 
   @media (max-width: 960px) {
@@ -211,7 +234,7 @@ const Nav = styled.nav`
       margin-top: 3.5rem;
     }
     .nav-item:nth-child(4) {
-      margin-bottom: 3.5rem;
+      margin-bottom: 1.5rem;
     }
     .navbar-logo {
       position: absolute;
@@ -231,6 +254,7 @@ const Nav = styled.nav`
       cursor: pointer;
     }
     .fa-times {
+      color: var(--mainColor);
       font-size: 2rem;
     }
     .nav-btn {
@@ -239,6 +263,9 @@ const Nav = styled.nav`
       align-items: center;
       width: 100%;
       height: 7.5rem;
+    }
+    #colorBg {
+      margin-bottom: 3.5rem;
     }
     #mobile-menu.is-active .bar:nth-child(2) {
       opacity: 0;

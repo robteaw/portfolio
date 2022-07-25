@@ -1,11 +1,11 @@
 import React from "react";
-import laptop from "../images/laptop.png";
+import laptop from "../../images/laptop.png";
 import styled from "styled-components";
 // Animation
 import { motion } from "framer-motion";
-import { container, titleAnim, imgAnim, scrollAnim } from "../animations";
-import { useScroll } from "../components/useScroll";
-import ScrollDown from "./ScrollDown";
+import { container, titleAnim, imgAnim, scrollAnim } from "../../animations";
+import { useScroll } from "../useScroll";
+import ScrollDown from "../ScrollDown";
 
 export default function Hero() {
   const [element, controls] = useScroll();
@@ -169,6 +169,7 @@ const Container = styled.div`
     .hero {
       display: flex;
       flex-direction: column-reverse;
+      margin: 6rem 0 5rem 0;
     }
   }
 `;

@@ -17,9 +17,8 @@ export default function ScrollDown() {
 
 // Styling
 const Container = styled.div`
-  height: 10rem;
+  height: 19rem;
   align-items: center;
-  margin-bottom: 10rem;
   .scroll-down {
     position: relative;
     right: 0;

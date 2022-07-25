@@ -23,11 +23,13 @@
   --bgColor: #0b2957;
   --bgColor2: #131313;
   --mouseHover: rgb(80, 137, 180);
+  --lightText: #000000;
+  --lightBg: #fff;
 }
 
 body {
+  background: linear-gradient(150deg,#0b2957 15%,rgb(12, 12, 53) 70%,#174a69 94%);
   font-family: "Roboto";
-  background:  linear-gradient(150deg,#0b2957 15%,rgb(12, 12, 53) 70%,#174a69 94%);;
   overflow-x: hidden;
 }
 
@@ -52,7 +54,7 @@ body {
   padding: 0 20%;
 }
 .about, .portfolio {
-  margin: 6rem 0 30rem 0;
+  margin: 6rem 0 25rem 0;
 }
 .portfolio {
   padding: 0 10%;
