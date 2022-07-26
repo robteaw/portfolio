@@ -207,9 +207,6 @@ const Nav = styled.nav`
       width: 100%;
       display: table;
     }
-    .nav-item:hover {
-      border: none;
-    }
     .nav-item {
       width: 100%;
     }

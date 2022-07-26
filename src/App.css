@@ -89,6 +89,9 @@ body.light .navbar.menu-icon {
 body.light .nav-menu.active a {
   color: #fff;
 }
+body.light .nav-menu.active a:hover {
+  color: #00bfff;
+}
 body.light .hero-text p {
   color: var(--toolText);
 }
