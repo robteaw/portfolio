@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { IconContext } from "react-icons";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../images/logo2.png";
+import logo from "../images/logo.png";
+import logo2 from "../images/logo2.png";
 import styled from "styled-components";
 // Animation
 import { motion } from "framer-motion";
 import { logoAnim, linkAnim } from "../animations";
 import { useScroll } from "../components/useScroll";
+import Toggle from "./Toggle";
 
 export default function Navbar() {
   const [element, controls] = useScroll();
@@ -39,7 +41,7 @@ export default function Navbar() {
         <div className="navbar-container container">
           {/* Logo */}
           <a href="/" className="navbar-logo" onClick={closeMobileMenu}>
-            <motion.img variants={logoAnim} src={logo} alt="logo"></motion.img>
+            <motion.img variants={logoAnim} src={logo2} alt="logo"></motion.img>
           </a>
           <div className="menu-icon" onClick={handleClick}>
             {click ? <FaTimes /> : <FaBars />}
@@ -74,7 +76,10 @@ export default function Navbar() {
                 Contact
               </a>
             </motion.li>
-  
+            <motion.li variants={linkAnim} className="nav-item">
+              <Toggle />
+            </motion.li>
+
             {/* Icon */}
             {/* <div class="icon">
               <a
@@ -122,10 +127,8 @@ const Nav = styled.nav`
     z-index: 1;
     width: 100%;
     max-width: 81.25rem;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 3.125rem;
-    padding-left: 3.125rem;
+    margin: 0 auto;
+    padding: 0 3.125rem;
   }
   .navbar-logo img {
     height: 3rem;
@@ -149,7 +152,6 @@ const Nav = styled.nav`
   }
   .nav-item {
     font-weight: 500;
-    height: 5rem;
     border-bottom: 2px solid transparent;
     padding: 0 0.25rem;
   }
@@ -221,6 +223,9 @@ const Nav = styled.nav`
     .nav-item:nth-child(4) {
       margin-bottom: 1.5rem;
     }
+    .nav-item:nth-child(5) {
+      margin-bottom: 3.5rem;
+    }
     .navbar-logo {
       position: absolute;
       top: 0;
@@ -248,9 +253,6 @@ const Nav = styled.nav`
       align-items: center;
       width: 100%;
       height: 7.5rem;
-    }
-    #colorBg {
-      margin-bottom: 3.5rem;
     }
     #mobile-menu.is-active .bar:nth-child(2) {
       opacity: 0;

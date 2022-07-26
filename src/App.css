@@ -22,9 +22,9 @@
   --cardTitle: #87cefa;
   --bgColor: #0b2957;
   --bgColor2: #131313;
-  --mouseHover: rgb(80, 137, 180);
   --lightText: #000000;
   --lightBg: #fff;
+  --lightH2: #dc143c;
 }
 
 body {
@@ -35,7 +35,6 @@ body {
 /* Dark mode */
 body.dark {
   background: linear-gradient(150deg,#0b2957 15%,rgb(12, 12, 53) 70%,#174a69 94%);
-  --image: url("./images/moon.png");
 }
 body.dark h1 {
   color: var(--heroColor);
@@ -43,18 +42,72 @@ body.dark h1 {
 body.dark p {
   color: var(--textColor);
 }
+body.dark .navbar a,
+.contact-info .row a h2 {
+  color:#fff;
+  transition: 0.5s ease-out;
+}
+body.dark .navbar a:hover {
+  color:#00bfff;
+}
+body.dark .modal p {
+  color: #000;
+}
+body.dark .contact-info .subject a {
+  color:var(--textColor);
+}
+body.dark .contact-info .row a h2:hover {
+  color:#00bfff;
+  transition: 0.5s ease-out;
+}
 /* Light mode */
 body.light {
-  background-color: var(--lightBg);
-  --image: url("./images/sun.png");
+  background: linear-gradient(150deg,#D3D3D3 15%, #F8F8FF 70%,#fff 94%);
 }
 body.light h1 {
   color: black;
 }
+body.light h1::after {
+  border-bottom: 0.4rem solid #000;
+}
+body.light h2 {
+  color:  var(--lightH2);
+}
 body.light p {
   color: black;
 }
-
+body.light .navbar a {
+  color:#000;
+  transition: 0.5s ease-out;
+}
+body.light .navbar a:hover {
+  color: #00bfff;
+}
+body.light .hero-text p {
+  color: var(--toolText);
+}
+body.light .second-text {
+  color: var(--lightH2);
+}
+body.light .mousey {
+  border: 2px solid #000;
+}
+body.light .scroller {
+  background-color: #000;
+}
+body.light .card {
+  border: 1px solid #dcdcdc;
+  transition: 0.5s ease-out;
+}
+body.light .contact-info .row a h2 {
+  color: #000;
+  transition: 0.5s ease-out;
+}
+body.light .contact-info .row a h2:hover {
+  color:#00bfff;
+  transition: 0.5s ease-out;
+}
+/* Section */
 .hero {
   height: auto;
   width: 100%;
@@ -102,16 +155,6 @@ p {
   line-height: 2rem;
 }
 
-.navbar a,
-footer a,
-.contact-info .row a h2 {
-  background: linear-gradient(to right, #fff 50%, #87cefa 50%, #00bfff);
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: 0.5s ease-out;
-}
-
 .navbar.nav-scroll {
   background-color: var(--navScroll);
   opacity: 0.9;
@@ -120,12 +163,6 @@ footer a,
 a:hover {
   background-position: -100%;
   outline: none;
-}
-
-#colorBg {
-  height: 2rem;
-  margin: 0 2rem;
-  cursor: pointer;
 }
 
 .head-container {

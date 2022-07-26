@@ -37,7 +37,7 @@ const Container = styled.div`
     opacity: 0.75;
     box-sizing: content-box;
     &:hover {
-      background-color: var(--mouseHover);
+      background-color: #00bfff;
     }
   }
   .scroller {

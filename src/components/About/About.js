@@ -115,7 +115,6 @@ const Container = styled.div`
   }
   .skills-images .icon span {
     color: var(--textColor);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 25%;
