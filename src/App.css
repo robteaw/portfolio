@@ -77,11 +77,17 @@ body.light p {
   color: black;
 }
 body.light .navbar a {
-  color:#000;
+  color: #000;
   transition: 0.5s ease-out;
 }
 body.light .navbar a:hover {
   color: #00bfff;
+}
+body.light .navbar.menu-icon {
+  color: #000;
+}
+body.light .nav-menu.active a {
+  color: #fff;
 }
 body.light .hero-text p {
   color: var(--toolText);
@@ -156,6 +162,7 @@ p {
 }
 
 .navbar.nav-scroll {
+  color: var(--btnText);
   background-color: var(--navScroll);
   opacity: 0.9;
 }

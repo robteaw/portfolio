@@ -37,8 +37,8 @@ export default function Toggle() {
   };
 
   // Icon change
-  //   const [icon, setIcon] = useState(moon);
-  //   const changeIcon = () => setIcon(!icon);
+  const [icon, setIcon] = useState(false);
+  const changeIcon = () => setIcon(!icon);
 
   return (
     <Container>

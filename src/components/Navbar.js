@@ -156,7 +156,6 @@ const Nav = styled.nav`
     padding: 0 0.25rem;
   }
   .nav-links {
-    color: var(--mainColor);
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -165,9 +164,6 @@ const Nav = styled.nav`
   }
   .nav-links:hover {
     color: var(--hoverColor);
-  }
-  .fa-bars {
-    color: var(--mainColor);
   }
   .menu-icon {
     display: none;
