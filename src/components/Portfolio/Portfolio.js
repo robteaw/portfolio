@@ -34,13 +34,13 @@ export default function Portfolio() {
             <Modal6 />
           </motion.div>
           <motion.div initial="hidden" variants={cardAnim} animate={controls}>
-            <Modal />
-          </motion.div>
-          <motion.div initial="hidden" variants={cardAnim} animate={controls}>
             <Modal5 />
           </motion.div>
           <motion.div initial="hidden" variants={cardAnim} animate={controls}>
             <Modal2 />
+          </motion.div>
+          <motion.div initial="hidden" variants={cardAnim} animate={controls}>
+            <Modal />
           </motion.div>
           <motion.div initial="hidden" variants={cardAnim} animate={controls}>
             <Modal3 />

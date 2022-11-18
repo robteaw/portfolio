@@ -76,9 +76,9 @@ export default function Navbar() {
                 Contact
               </a>
             </motion.li>
-            <motion.li variants={linkAnim} className="nav-item">
+            {/* <motion.li variants={linkAnim} className="nav-item">
               <Toggle />
-            </motion.li>
+            </motion.li> */}
 
             {/* Icon */}
             {/* <div class="icon">

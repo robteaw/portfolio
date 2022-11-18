@@ -61,7 +61,7 @@ body.dark .contact-info .row a h2:hover {
   transition: 0.5s ease-out;
 }
 /* Light mode */
-body.light {
+/* body.light {
   background: linear-gradient(150deg,#87CEFA 15%, #E6E6FA 70%,#fff 94%);
 }
 body.light h1 {
@@ -115,7 +115,35 @@ body.light .contact-info .row a h2 {
 body.light .contact-info .row a h2:hover {
   color:#00bfff;
   transition: 0.5s ease-out;
+} */
+body.light {
+  background: linear-gradient(150deg,#0b2957 15%,rgb(12, 12, 53) 70%,#174a69 94%);
 }
+body.light h1 {
+  color: var(--heroColor);
+}
+body.light p {
+  color: var(--textColor);
+}
+body.light .navbar a,
+.contact-info .row a h2 {
+  color:#fff;
+  transition: 0.5s ease-out;
+}
+body.light .navbar a:hover {
+  color:#00bfff;
+}
+body.light .modal p {
+  color: #000;
+}
+body.light .contact-info .subject a {
+  color:var(--textColor);
+}
+body.light .contact-info .row a h2:hover {
+  color:#00bfff;
+  transition: 0.5s ease-out;
+}
+
 /* Section */
 .hero {
   height: auto;
