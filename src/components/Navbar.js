@@ -163,7 +163,7 @@ const Nav = styled.nav`
     height: 100%;
   }
   .nav-links:hover {
-    color: var(--hoverColor);
+    color: #00bfff;
   }
   .menu-icon {
     display: none;
@@ -176,7 +176,7 @@ const Nav = styled.nav`
     align-items: center;
     cursor: pointer;
     &:hover {
-      color: var(--btnColor);
+      color: #00bfff;
     }
   }
 
