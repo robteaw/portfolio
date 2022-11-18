@@ -277,6 +277,14 @@ a:hover {
   background-size: 150%;
 }
 
+.img-six {
+  background: url("./images/collection.png") no-repeat;
+  height: 300px;
+  width: 100%;
+  border-radius: 5% 0;
+  background-size: 150%;
+}
+
 .card .title {
   font-size: 1.5rem;
   font-weight: bold;
