@@ -28,14 +28,24 @@
 }
 
 body {
-  background: linear-gradient(150deg,#0b2957 15%,rgb(12, 12, 53) 70%,#174a69 94%);
+  background: linear-gradient(
+    150deg,
+    #0b2957 15%,
+    rgb(12, 12, 53) 70%,
+    #174a69 94%
+  );
   font-family: "Roboto";
   overflow-x: hidden;
 }
 
 /* Dark mode */
 body.dark {
-  background: linear-gradient(150deg,#0b2957 15%,rgb(12, 12, 53) 70%,#174a69 94%);
+  background: linear-gradient(
+    150deg,
+    #0b2957 15%,
+    rgb(12, 12, 53) 70%,
+    #174a69 94%
+  );
 }
 body.dark h1 {
   color: var(--heroColor);
@@ -45,20 +55,20 @@ body.dark p {
 }
 body.dark .navbar a,
 .contact-info .row a h2 {
-  color:#fff;
+  color: #fff;
   transition: 0.5s ease-out;
 }
 body.dark .navbar a:hover {
-  color:#00bfff;
+  color: #00bfff;
 }
 body.dark .modal p {
   color: #000;
 }
 body.dark .contact-info .subject a {
-  color:var(--textColor);
+  color: var(--textColor);
 }
 body.dark .contact-info .row a h2:hover {
-  color:#00bfff;
+  color: #00bfff;
   transition: 0.5s ease-out;
 }
 /* Light mode */
@@ -119,17 +129,17 @@ body.light .contact-info .row a h2:hover {
 } */
 .navbar a,
 .contact-info .row a h2 {
-  color:#fff;
+  color: #fff;
   transition: 0.5s ease-out;
 }
 .modal p {
   color: #000;
 }
 .contact-info .subject a {
-  color:var(--textColor);
+  color: var(--textColor);
 }
 .contact-info .row a h2:hover {
-  color:#00bfff;
+  color: #00bfff;
   transition: 0.5s ease-out;
 }
 
@@ -143,7 +153,9 @@ body.light .contact-info .row a h2:hover {
   justify-content: center;
   place-items: center;
 }
-.about, .portfolio, .contact {
+.about,
+.portfolio,
+.contact {
   height: auto;
   width: 100%;
   display: flex;
@@ -151,10 +163,13 @@ body.light .contact-info .row a h2:hover {
   justify-content: center;
   place-items: center;
 }
-.hero, .about, .contact {
+.hero,
+.about,
+.contact {
   padding: 0 20%;
 }
-.about, .portfolio {
+.about,
+.portfolio {
   margin: 6rem 0 25rem 0;
 }
 .portfolio {
@@ -298,6 +313,14 @@ a:hover {
 
 .img-six {
   background: url("./images/collection.png") no-repeat;
+  height: 300px;
+  width: 100%;
+  border-radius: 5% 0;
+  background-size: 150%;
+}
+
+.img-seven {
+  background: url("./images/guide.png") no-repeat;
   height: 300px;
   width: 100%;
   border-radius: 5% 0;
