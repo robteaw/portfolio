@@ -43,7 +43,7 @@ export default function Modal() {
                 <button>Code</button>
               </a>
               <a
-                href="https://renteaphotography.com/"
+                href="https://ecstatic-elion-18be7a.netlify.app"
                 target="_blank"
                 rel="noreferrer"
               >
