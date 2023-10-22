@@ -2,7 +2,8 @@ import React from "react";
 import book from "../../images/book.png";
 import javascript from "../../images/javascript.png";
 import react from "../../images/react.png";
-// import python from "../../images/python.png";
+import typescript from "../../images/typescript.png";
+import sass from "../../images/sass.png";
 import sql from "../../images/sql.png";
 import photoshop from "../../images/photoshop.png";
 import styled from "styled-components";
@@ -17,7 +18,8 @@ export default function About() {
   const data = [
     { tooltip: "JavaScript", img: javascript },
     { tooltip: "React", img: react },
-    // { tooltip: "Python", img: python },
+    { tooltip: "TypeScript", img: typescript },
+    { tooltip: "Sass", img: sass },
     { tooltip: "SQL", img: sql },
     { tooltip: "Photoshop", img: photoshop },
   ];
@@ -56,8 +58,8 @@ export default function About() {
             Hello, welcome! My name is Robert Tea. I am a 2018 graduate with a
             degree in Computer Information Systems. I have some prior
             experiences working in a team, freelancing and personal projects. My
-            main focus have been in Java Script and React. Also learning
-            Typescript and Next JS.
+            main focus have been in JavaScript and React. Also learning
+            TypeScript and Next JS.
           </p>
           <h2>Technical Skills</h2>
           <div className="skills-images">
