@@ -1,6 +1,5 @@
 import React from "react";
 import email from "../../images/email.png";
-import mobile from "../../images/mobile.png";
 import telephone from "../../images/telephone.png";
 import styled from "styled-components";
 // Animation
@@ -48,17 +47,6 @@ function Contact() {
             </h2>
             <a href="mailto: robteaw@gmail.com">
               <h2 className="subject">robteaw@gmail.com</h2>
-            </a>
-          </div>
-
-          <div className="row">
-            <h2>
-              <img src={mobile} alt={mobile} />
-              Phone:
-            </h2>
-
-            <a href="tel: 7132403527">
-              <h2 className="subject">713-240-3527</h2>
             </a>
           </div>
         </motion.div>
